@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Aman Mishra|Project</title>
+        <link rel="icon" href="../images/Favicon.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="../css/Style1.css">
+        <link rel="stylesheet" href="../css/carousel.css">
+        <script src="https://kit.fontawesome.com/dd98d20d26.js" crossorigin="anonymous"></script>
+        <script src="../js/Loader.js"></script>
+        <link rel="stylesheet" href="../css/background.css">
+
+    </head>
+
+    <body onload="pageload()" onscroll ="scroll()">
+
+        <div class="loader">
+            <div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+        </div>
+
+        <header>
+            
+            <div id="img">
+                <img src="../images/Aman.jpg" alt="Aman Mishra" id='UserPic'>
+            </div>
+
+            <div>
+
+                <div id="name">
+                    <h1>Aman Mishra</h1>
+                </div>
+
+                <div class="headArea address">
+                    <p id= address>576, Badanpur <br>Brahmanagar <br>Auraiya 206122 </p>
+                </div>
+
+                <div class="headArea">
+                    
+                    <p id="headline">Python Programmer <br> & <br> Front-End Web Developer</p>
+                       
+                </div>
+
+            </div>
+
+        </header>
+
+        <div id="blank"></div>
+
+        <nav>
+
+            <input type="checkbox" class="fade" name='menu' id="menu">
+            <label for="menu" class="fade" id="open">&#9776;</label>
+            <label for="menu" class="fade" id="close">&#10005;</label>
+
+            <div class="fade" id="Navigation">
+
+                <a href="../" >Home</a>
+                <a href="../education/">Education</a>
+                <a href="#" class = "active">Project</a>
+                <a href="../skills/">Skills</a>
+
+            </div>
+
+        </nav>
+
+        <section id="Project">
+
+            <h1>My Projects</h1>
+
+            <div id="Python" class="Project">
+
+                <h2>Python Projects</h2>
+
+                <a href="../Files/assistance.zip" download="Assistance">
+
+                    <div class="Projects">
+                        <h3>V Assistant</h3>
+                        <p>In this Project I built a Simple Voice Assistant which perform some task as per the given Voice Commands.</p>
+                    </div>
+
+                </a>
+    
+                <a href="../Files/snake.zip" download="Snake Game">
+    
+                    <div class="Projects">
+                        <h3>Snake Game</h3>
+                        <p>In this Project I built simple Snake Game in Python. This project is assigned to me during Pygame Course on guvi.in</p>
+                    </div>
+                    
+                </a>
+
+                <a href="../Files/PingPong.zip" download="Ping Pong Game">
+    
+                    <div class="Projects">
+                        <h3>Ping Pong Game</h3>
+                        <p>In this Project I built simple Ping Pong Game in Python. This project is assigned to me during Pygame Course on guvi.in</p>
+                    </div>
+                    
+                </a>
+
+                <a href="../Files/F1Race.zip" download="F1 Race Game">
+    
+                    <div class="Projects">
+                        <h3>F1 Race Game</h3>
+                        <p>In this Project I built simple Car Game in Python. This project is assigned to me during Python Summer Training 2019</p>
+                    </div>
+                    
+                </a>
+
+            </div>
+
+            <div id="Java" class="Project">
+
+                <h2>Java Projects</h2>
+
+                <a href="https://github.com/amanmishra2391/Java-Project/blob/master/SimpleChattyBot.java" target="_blank">
+
+                    <div class="Projects">
+                        <h3>Simple Chatty Bot</h3>
+                        <p>A simple Chatty Bot which is assigned to me by Jetbrains Academy</p>
+                    </div>
+
+                </a>
+
+                <a href="https://github.com/amanmishra2391/Java-Project/blob/master/CoffeeMachine.java" target="_blank">
+
+                    <div class="Projects">
+                        <h3>Virtual Coffee Machine</h3>
+                        <p>A Virtual Coffee Machine which is assignedto me by Jetbrains Academy</p>
+                    </div>
+
+                </a>            
+
+            </div>
+            
+        </section>
+
+        <div id="Form">
+
+            <input type="checkbox" name="Contact" id="Contact">
+            <label for="Contact" id="up">Contact Us <i class="fas fa-chevron-up"></i></label>
+            
+            <div id="down">
+
+                <label for="Contact" id="down2">Contact Us <i class="fas fa-chevron-down"></i></label>
+
+                <div id="response">
+                    Thank you for contacting.<br>Your response has been recorded. I will contact you soon. :)
+                </div>
+
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="if(submitted) {fun()};"></iframe>
+
+                <div id="show">
+                    <button onclick="fun2()">Press</button> to send more messages.
+                </div>
+
+                <div id="formdata">
+                    <h3 id='contactheading'>Contact Us</h3>
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSc-ydS8bRNtlm8Kv2q-pfUQM7IA_r5Km7IqzzNFR-HohqHTGQ/formResponse" target="hidden_iframe" onsubmit="submitted=true;" method="post">
+                        <label for="name">Name:*</label>
+                        <input type="text" name="entry.2005620554" id="name" required>
+                        <label for="email">E-mail Address:*</label>
+                        <input type="email" name="entry.708412597" id="email" required>
+                        <label for="mobile">Contact No. :</label>
+                        <input type="tel" name="entry.1166974658" id="mobile">
+                        <label for="message">Message:*</label>
+                        <textarea name="entry.839337160" id="Message" cols="30" rows="5" required></textarea>
+                        <input type="reset" value="Reset Data" class="button">
+                        <input type="submit" value="Send Message" class="button">
+                    </form>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <footer>
+            <p>
+                Developed by Aman Mishra
+            </p>
+            &copy; 2020, All rights reserved to Aman Mishra
+            <br>
+            <a href="mailto://amanmishra2391@gmail.com" class="refer"><i class="far fa-envelope"></i> amanmishra2391@gmail.com</a>
+            <br>
+            <a class='refer' href="tel://9457039381"><i class="fas fa-phone-alt"></i> +91 9457 039 381</a>
+            <br>
+            <a href="https://facebook.com/amanmishra2391" target="_blank" class="fab fa-facebook fa-2x"> </a>
+            <a href="https://instagram.com/amanmishra_2391" target="_blank" class="fab fa-instagram fa-2x"> </a>                
+        </footer>
+    </body>
+
+    </html>
+
