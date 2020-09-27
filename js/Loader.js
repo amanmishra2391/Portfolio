@@ -1,4 +1,5 @@
 var submitted=false;
+var loading=false;
 
 function pageload(){
         document.getElementsByClassName('loader')[0].classList.add('show')
@@ -6,23 +7,43 @@ function pageload(){
 
 function fun(){
         window.location='#';
-        document.getElementById('name').value='';
-        document.getElementById('email').value='';
-        document.getElementById('mobile').value='';
-        document.getElementById('Message').value='';
+        document.getElementById('entry.2005620554').value='';
+        document.getElementById('entry.708412597').value='';
+        document.getElementById('entry.1166974658').value='';
+        document.getElementById('entry.839337160').value='';
         document.getElementById('response').style.display='block';
         document.getElementById('formdata').style.display='none';
         document.getElementById('show').style.display='block';
         document.getElementById('response').style.width='300px';
         document.getElementById('down2').style.width='300px';
+        document.getElementById('wait').style.display='none';
+        
 };
 
 function fun2(){
         document.getElementById('response').style.display='none';
         document.getElementById('formdata').style.display='block';
         document.getElementById('show').style.display='none';
+        loading=false;
         document.getElementById('down2').style.width='231px';
 }
+
+function fun3(){
+        loading=true;
+        document.getElementById('wait').style.display='block';
+}
+
+function fun4(){
+        document.getElementById('wait').style.display='none';
+}
+
+function fun5(){
+        if (loading){
+                document.getElementById('wait').style.display='block';
+        }
+}
+
+
 
 function scroll(){
         if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10){

@@ -277,6 +277,21 @@ tr:last-child td:last-child{
     border-radius: 0% 0% 50% 0%;
 }
 
+#wait p{
+    padding: 40% 10%;
+}
+
+#wait{
+    display: none;
+        text-align: center;
+        background-color:#ffffff66;
+        position: absolute;
+        
+        width: 100vw;
+        height: 330px;
+        bottom: -180vh;
+}
+
 td:hover{
     background-color: #ffffffaa;
     padding: 1.5%;
@@ -348,6 +363,16 @@ body{
 
     .hide{
         display: block;
+    }
+
+    #wait{
+        
+        position: fixed;
+            right:1%;
+            z-index: 10;
+            bottom: 0%;
+            height:296px;
+            width:237px;
     }
 
     #blank{

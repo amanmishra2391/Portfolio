@@ -143,11 +143,11 @@
         <div id="Form">
 
             <input type="checkbox" name="Contact" id="Contact">
-            <label for="Contact" id="up">Contact Us <i class="fas fa-chevron-up"></i></label>
+            <label for="Contact" id="up" onclick="fun5()">Contact Us <i class="fas fa-chevron-up"></i></label>
             
             <div id="down">
 
-                <label for="Contact" id="down2">Contact Us <i class="fas fa-chevron-down"></i></label>
+                <label for="Contact" id="down2" onclick="fun4()">Contact Us <i class="fas fa-chevron-down"></i></label>
 
                 <div id="response">
                     Thank you for contacting.<br>Your response has been recorded. I will contact you soon. :)
@@ -171,12 +171,23 @@
                         <label for="entry.839337160">Message:*</label>
                         <textarea name="entry.839337160" id="entry.839337160" cols="30" rows="5" required></textarea>
                         <input type="reset" value="Reset Data" class="button">
-                        <input type="submit" value="Send Message" class="button">
+                        <input type="submit" value="Send Message" class="button" onclick="fun3()">
                     </form>
+                    
                 </div>
+
+                
+
+                
                 
             </div>
 
+            
+
+        </div>
+
+        <div id='wait'>
+            <p>Please Wait...</p>
         </div>
 
         <footer>
